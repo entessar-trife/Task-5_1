@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+.calculator {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/photo_2024-10-13_18-10-11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calc-box {
+  background-color: #ffffff6d;
+  border: 2px solid #b493bebb;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 1px 1px 7px 2px rgba(190, 187, 187, 0.274);
+  width:  370px;
+}
+input {
+  width: 100%; 
+  height: 70px;
+  border: 2px solid #b493bebb;
+  background-color: #ffffff30;
+  box-shadow: inset 8px 8px 8px #cdced145,
+              inset -8px -8px 8px #cdced145;
+  text-align: right;
+  padding-right: 10px;
+}
+.first-row, .second-row,
+.third-row, .fourth-row, .fifth-row {
+  display: flex;
+  justify-content: space-around;
+}
+.button-style {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 7px 2px rgba(190, 187, 187, 0.408);
+}
+.zero, .one, .two, .three,
+.four, .five, .six,
+.seven, .eight, .nine {
+  background-color: #e7bbf4bb;
+}
+.zero:hover, .one:hover, .two:hover, .three:hover,
+.four:hover, .five:hover, .six:hover,
+.seven:hover, .eight:hover, .nine:hover {
+  background-color: #e7bbf4;
+  transform: scale(1.2);
+}
+.division, .multi, .min, .plus, .point {
+  background-color: rgba(255, 197, 255, 0.604);
+}
+.division:hover, .multi:hover, .min:hover, 
+.plus:hover, .point:hover {
+  background-color: rgba(255, 197, 255, 0.988);
+  transform: scale(1.2);
+}
+.delete-number, .delete-all, .equal {
+  background-color: #cdd9f1;
+} 
+.delete-number:hover, .delete-all:hover, .equal:hover {
+  background-color: #cdd9f1;
+  transform: scale(1.2);
+}
+.sin:hover, .cos:hover, .tan:hover, 
+.sqrt:hover, .pow:hover, .π:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width:576px) {
+  .calc-box { width: 290px; }
+}
